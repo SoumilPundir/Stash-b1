@@ -303,12 +303,12 @@ const AddTransactionForm = ({
         <Button
           type="button"
           variant="outline"
-          className="w-full"
+          className="w-full cursor-pointer"
           onClick={() => router.back()}
         >
           Cancel
         </Button>
-        <Button type="submit" className="w-full" disabled={transactionLoading}>
+        <Button type="submit" className="w-full cursor-pointer" disabled={transactionLoading}>
           {transactionLoading ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
